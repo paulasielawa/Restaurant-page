@@ -1,0 +1,277 @@
+body,
+html {
+  height: 100%;
+}
+/* Navigation bar */
+a.navbar-brand {
+  color: rgb(30, 89, 140);
+  font-family: "Permanent Marker", cursive;
+  font-size: 55px;
+}
+.navbar {
+  padding: 20px 0;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  right: 0;
+}
+.navbar-toggle {
+  background-color: aliceblue;
+}
+.navbar-toggle .icon-bar {
+  background-color: rgb(28, 24, 22);
+}
+.nav a {
+  color: rgb(28, 24, 22);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.nav li a:hover {
+  color: rgb(30, 89, 140);
+  background-color: white;
+}
+
+/* Carousel */
+@media only screen and (max-width: 768px) {
+  .carousel-inner {
+    object-fit: cover;
+    max-height: 400px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel-inner {
+    object-fit: cover;
+    height: 700px;
+  }
+}
+.carousel-inner img {
+  filter: brightness(50%);
+  width: 100%;
+}
+
+div.item {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(-20%, -60%);
+}
+
+#myCarousel {
+  margin-top: 80px;
+}
+
+span.restaurant {
+  font-family: "Permanent Marker", cursive;
+  font-size: 80px;
+}
+.carousel-caption h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 5px;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 0.9;
+}
+.carousel-caption h3 {
+  border-top: 0.5px groove #fff;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  margin: 15px auto 0;
+  max-width: 400px;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+/* Article content */
+h3.decoration-title {
+  font-size: 75px;
+  text-align: center;
+  color: rgb(30, 89, 140);
+  font-family: "Ephesis", cursive;
+  letter-spacing: 0.15em;
+  margin-top: 0;
+}
+h3.under {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  margin-bottom: 50px;
+  letter-spacing: 0.1em;
+}
+p.beskrivelse {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 630px;
+}
+
+.sideimg {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.article-first {
+  padding: 80px 0;
+}
+
+/* Button se hele menyen */
+
+.btn {
+  background-color: rgb(30, 89, 140);
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+  color: white;
+}
+
+/* Parallax kontakt*/
+
+.parallax-kontakt {
+  min-height: 400px;
+  background-image: url("parallax1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.parallax-kontakt h1 {
+  color: #fff;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  padding: 15px;
+}
+
+.kontakt {
+  padding: 60px 0;
+}
+
+.kontakt h1 {
+  color: rgb(30, 89, 140);
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.kontakt-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px;
+}
+
+.kontakt p {
+  font-size: 18px;
+}
+
+/* Parallax bubble*/
+.parallax-bubble {
+  min-height: 400px;
+  background-image: url("parallax2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.parallax-bubble h1 {
+  color: #fff;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  padding: 15px;
+}
+.parallax-bubble span {
+  font-family: "Ephesis", cursive;
+  text-transform: capitalize;
+  line-height: 0.6;
+  font-size: 80px;
+}
+
+h1.together {
+  font-size: 75px;
+  text-align: center;
+  color: rgb(30, 89, 140);
+  font-family: "Ephesis", cursive;
+  letter-spacing: 0.15em;
+}
+
+h1.under-bubble {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  padding-bottom: 60px;
+}
+
+.bubble p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.bubble {
+  padding: 40px 0;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+}
+
+footer {
+  background-color: rgb(30, 89, 140);
+  height: 100px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
+}
