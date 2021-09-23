@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Moderne restaurant med småretter på menyen"
+    />
+    <meta name="keywords" content="restaurant, Oslo, enormt vinutvalg" />
+    <meta name="author" content="Paula Sielawa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C-food</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">C-food</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Forside</a></li>
+            <li><a href="meny.html">Meny</a></li>
+            <li><a href="#">Reserver bord</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Parallax -->
+    <div class="container-fluid parallax-forms">
+      <h1><span>Kontakt</span><br />oss</h1>
+    </div>
+    <!-- Contact form content-->
+    <div class="container kontakt">
+      <div class="row">
+        <div class="kontakt_form col-sm-6 col-sm-offset-3">
+          <form action="action_page.php">
+            <label for="fname">Fornavn</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Ditt fornavn.."
+            />
+
+            <label for="lname">Etternavn</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Ditt etternavn.."
+            />
+
+            <label for="country">Land</label>
+            <select id="country" name="country">
+              <option value="norge">Norge</option>
+              <option value="sverige">Sverige</option>
+              <option value="finland">Finland</option>
+            </select>
+
+            <label for="subject">Emne</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Skriv her.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+        <div class="col-sm-6 kontakt-wrapper">
+          <h1>Velkommen skal dere være</h1>
+          <p>Restaurant C-food</p>
+          <p>Professor Dahls gate 48</p>
+          <p>0260 Oslo</p>
+          <p>Telefon: 22 11 11 11</p>
+          <br />
+          <p>Mail: restaurant@cfood.no</p>
+          <p>
+            <strong
+              >Vi er åpen fra tirsdag til lørdag fra klokken 17.00.</strong
+            >
+          </p>
+          <p><strong>Mandag & Søndag: stengt</strong></p>
+        </div>
+        <div class="col-sm-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4225076246055!2d10.709365016068878!3d59.925131070150364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416dd03eefb81b%3A0xd8abd6fe749d5ccd!2sProfessor%20Dahls%20gate%2048%2C%200260%20Oslo!5e0!3m2!1spl!2sno!4v1632339882650!5m2!1spl!2sno"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="row-media">
+        <h1>C-food</h1>
+        <a href="https://www.w3.org/">
+          <img
+            class="instagramicon"
+            src="instagramlogo.png"
+            alt="Instagram logo"
+        /></a>
+        <a href="https://www.w3.org/">
+          <img class="facebookicon" src="facebooklogo.png" alt="Facebook logo"
+        /></a>
+        <div class="row">
+          <p>
+            Oslo, Professor Dahls gate 48 | e-mail: restaurant@cfood.no | tel.
+            22 11 11 11 | 2021
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

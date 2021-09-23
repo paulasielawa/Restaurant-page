@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
 }
-/* Navigation bar */
+/*Navigation bar*/
 a.navbar-brand {
   color: rgb(30, 89, 140);
   font-family: "Permanent Marker", cursive;
@@ -33,7 +33,7 @@ a.navbar-brand {
   background-color: white;
 }
 
-/* Carousel */
+/*Carousel*/
 @media only screen and (max-width: 768px) {
   .carousel-inner {
     object-fit: cover;
@@ -89,7 +89,7 @@ span.restaurant {
   font-size: 20px;
 }
 
-/* Article content */
+/*Article content*/
 h3.decoration-title {
   font-size: 75px;
   text-align: center;
@@ -131,21 +131,21 @@ p.beskrivelse {
   padding: 80px 0;
 }
 
-/* Button se hele menyen */
+/*Blue button*/
 
 .btn {
   background-color: rgb(30, 89, 140);
-  border: none;
+  font-size: 16px;
   color: white;
+  border: none;
   padding: 18px 32px;
   text-align: center;
-  font-size: 16px;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
+  border-radius: 4px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border-radius: 4px;
 }
 
 .btn:hover {
@@ -153,7 +153,7 @@ p.beskrivelse {
   color: white;
 }
 
-/* Parallax kontakt*/
+/*Parallax kontakt*/
 
 .parallax-kontakt {
   min-height: 400px;
@@ -202,7 +202,7 @@ p.beskrivelse {
   font-size: 18px;
 }
 
-/* Parallax bubble*/
+/*Parallax bubble*/
 .parallax-bubble {
   min-height: 400px;
   background-image: url("parallax2.jpg");
@@ -264,14 +264,220 @@ h1.under-bubble {
   height: 150px;
 }
 
+/* Footer*/
+
 footer {
   background-color: rgb(30, 89, 140);
-  height: 100px;
+  height: 250px;
   width: 100%;
 }
 
 footer p {
   text-align: center;
   color: #fff;
-  padding-top: 40px;
+  padding-top: 20px;
+}
+
+footer h1 {
+  color: #fff;
+  font-family: "Permanent Marker", cursive;
+  font-size: 45px;
+  padding: 15px;
+}
+
+footer img {
+  margin: 10px;
+  opacity: 0.5;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+img.instagramicon {
+  height: 25px;
+  height: 25px;
+}
+img.facebookicon {
+  height: 30px;
+  height: 30px;
+}
+.row-media {
+  text-align: center;
+}
+
+/*Ny kategorii meny*/
+.parallax-meny {
+  min-height: 400px;
+  background-image: url("menybackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.parallax-meny h1 {
+  color: #fff;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  padding: 15px;
+}
+.parallax-meny span {
+  font-family: "Ephesis", cursive;
+  text-transform: capitalize;
+  line-height: 0.6;
+  font-size: 80px;
+}
+
+h1.together-meny {
+  font-size: 75px;
+  text-align: center;
+  color: rgb(30, 89, 140);
+  font-family: "Ephesis", cursive;
+  letter-spacing: 0.15em;
+}
+
+h1.under-meny {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  padding-top: 80px;
+}
+
+p.main {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 22px;
+}
+
+p.pris {
+  text-align: center;
+  font-size: 22px;
+}
+
+p.allergener {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.meny {
+  padding: 60px 0;
+}
+
+.box p {
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.1em;
+}
+
+a.box-effect {
+  color: black;
+}
+a.box-effect:hover {
+  cursor: pointer;
+}
+a.box-effect::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+a.box-effect:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.box-effect::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgba(47, 108, 161, 0.397);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.box {
+  box-shadow: rgba(30, 89, 140, 0.4) -5px 5px, rgba(30, 89, 140, 0.3) -10px 10px,
+    rgba(30, 89, 140, 0.2) -15px 15px, rgba(30, 89, 140, 0.1) -20px 20px,
+    rgba(30, 89, 140, 0.05) -25px 25px;
+  padding: 5px;
+}
+
+/*Kategori kontakt form*/
+
+.parallax-forms {
+  min-height: 400px;
+  background-image: url("oslo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.parallax-forms h1 {
+  color: #fff;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  padding: 15px;
+}
+.parallax-forms span {
+  font-family: "Ephesis", cursive;
+  text-transform: capitalize;
+  line-height: 0.6;
+  font-size: 80px;
+}
+/*Kontakt form*/
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: rgba(30, 89, 140);
+  opacity: 0.6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(30, 89, 140);
+  opacity: 1;
+}
+
+.kontakt_form {
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+  border-bottom: 4px groove rgb(130, 171, 207);
 }

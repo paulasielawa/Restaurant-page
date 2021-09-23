@@ -9,6 +9,7 @@
     <meta name="keywords" content="restaurant, Oslo, enormt vinutvalg" />
     <meta name="author" content="Paula Sielawa" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C-food</title>
 
     <!-- Fonts -->
     <link
@@ -56,10 +57,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Forside</a></li>
-            <li><a href="#">Meny</a></li>
+            <li class="active"><a href="index.html">Forside</a></li>
+            <li><a href="meny.html">Meny</a></li>
             <li><a href="#">Reserver bord</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -147,7 +148,7 @@
               drikke og alt dette serveres til en svært fornuftig pris.
             </p>
 
-            <button class="btn">Se hele menyen</button>
+            <a class="btn" href="meny.html">Se hele menyen</a>
           </div>
         </div>
         <div class="col-sm-6">
@@ -182,8 +183,8 @@
         </p>
       </div>
       <div class="row-wrapper">
-        <button class="btn">Meny</button>
-        <button class="btn">Reserver bord</button>
+        <a class="btn" href="meny.html">Meny</a>
+        <a class="btn" href="meny.html">Reserver bord</a>
       </div>
     </div>
     <!-- Parallax kontakt -->
@@ -201,9 +202,13 @@
           <p>Telefon: 22 11 11 11</p>
           <br />
           <p>Mail: restaurant@cfood.no</p>
-          <p>Vi er åpen fra tirsdag til lørdag fra klokken 17.00.</p>
-          <p>Mandag & Søndag: stengt</p>
-          <button class="btn">Send email</button>
+          <p>
+            <strong
+              >Vi er åpen fra tirsdag til lørdag fra klokken 17.00.</strong
+            >
+          </p>
+          <p><strong>Mandag & Søndag: stengt</strong></p>
+          <a class="btn" href="#">Send email</a>
         </div>
         <div class="col-sm-6">
           <iframe
@@ -217,11 +222,25 @@
         </div>
       </div>
     </div>
-    <footer>
-      <p>
-        Oslo, Professor Dahls gate 48 | e-mail: restaurant@cfood.no | tel. 22 11
-        11 11 | 2021
-      </p>
+    <footer class="container-fluid">
+      <div class="row-media">
+        <h1>C-food</h1>
+        <a href="https://www.w3.org/">
+          <img
+            class="instagramicon"
+            src="instagramlogo.png"
+            alt="Instagram logo"
+        /></a>
+        <a href="https://www.w3.org/">
+          <img class="facebookicon" src="facebooklogo.png" alt="Facebook logo"
+        /></a>
+        <div class="row">
+          <p>
+            Oslo, Professor Dahls gate 48 | e-mail: restaurant@cfood.no | tel.
+            22 11 11 11 | 2021
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
